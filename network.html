@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Network Security | CyberSafe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">CyberSafe</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="threats.html">Cyber Threats</a></li>
+                <li><a href="password.html">Password Checker</a></li>
+                <li><a href="cryptography.html">Cryptography</a></li>
+                <li><a href="network.html">Network Security</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Network Security Introduction -->
+
+    <section class="network-hero">
+
+        <h1>Computer Networks & Network Security 🌐</h1>
+
+        <p>
+            Understand computer networks, communication models
+            and basic network security concepts.
+        </p>
+
+    </section>
+
+
+    <!-- Types of Networks -->
+
+    <section class="network-section">
+
+        <h2>Types of Computer Networks</h2>
+
+        <div class="network-cards">
+
+            <div class="network-card">
+                <h3>LAN</h3>
+                <p>
+                    Local Area Network connects computers
+                    within a small geographical area such
+                    as a school, office or building.
+                </p>
+            </div>
+
+            <div class="network-card">
+                <h3>MAN</h3>
+                <p>
+                    Metropolitan Area Network connects
+                    computers across a city or large
+                    geographical area.
+                </p>
+            </div>
+
+            <div class="network-card">
+                <h3>WAN</h3>
+                <p>
+                    Wide Area Network connects computers
+                    over large geographical areas.
+                    The Internet is a common example.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OSI Model -->
+
+    <section class="network-section osi-section">
+
+        <h2>OSI Reference Model</h2>
+
+        <p>The OSI model contains seven layers.</p>
+
+        <div class="osi-layers">
+        <!-- OSI Reference Model -->
+        <section>
+    <!-- Your existing seven layer boxes -->
+        </section>
+
+        <!-- Paste the seven-layer explanation here -->
+
+        <!-- TCP/IP Reference Model -->
+        <section>
+    <!-- Your existing TCP/IP content -->
+<section class="osi-section">
+    <h2>OSI Reference Model</h2>
+    <p>The OSI model contains seven layers.</p>
+
+    <div class="osi-layers">
+        <button onclick="showLayer(7)">7. Application Layer</button>
+        <button onclick="showLayer(6)">6. Presentation Layer</button>
+        <button onclick="showLayer(5)">5. Session Layer</button>
+        <button onclick="showLayer(4)">4. Transport Layer</button>
+        <button onclick="showLayer(3)">3. Network Layer</button>
+        <button onclick="showLayer(2)">2. Data Link Layer</button>
+        <button onclick="showLayer(1)">1. Physical Layer</button>
+    </div>
+
+    <div id="layerExplanation" class="layer-explanation">
+        <h3>Click any layer to see its explanation</h3>
+    </div>
+</section>
+
+
+    <!-- TCP/IP Model -->
+
+    <section class="network-section">
+
+        <h2>TCP/IP Reference Model</h2>
+
+        <div class="network-cards">
+
+            <div class="network-card">
+                <h3>Application</h3>
+                <p>Provides network services to applications.</p>
+            </div>
+
+            <div class="network-card">
+                <h3>Transport</h3>
+                <p>Provides communication using TCP and UDP.</p>
+            </div>
+
+            <div class="network-card">
+                <h3>Internet</h3>
+                <p>Handles IP addressing and packet routing.</p>
+            </div>
+
+            <div class="network-card">
+                <h3>Network Access</h3>
+                <p>Handles communication over the physical network.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Network Security -->
+
+    <section class="network-section security-section">
+
+        <h2>Basic Network Security</h2>
+
+        <div class="network-cards">
+
+            <div class="network-card">
+                <h3>Firewall</h3>
+                <p>
+                    A firewall monitors and controls
+                    incoming and outgoing network traffic.
+                </p>
+            </div>
+
+            <div class="network-card">
+                <h3>Encryption</h3>
+                <p>
+                    Encryption protects information by
+                    converting readable data into coded data.
+                </p>
+            </div>
+
+            <div class="network-card">
+                <h3>Antivirus</h3>
+                <p>
+                    Antivirus software helps detect and
+                    remove malicious software.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 CyberSafe | Stay Safe Online</p>
+
+    </footer>
+<script>
+function showLayer(layer) {
+
+    const explanations = {
+        7: ["Application Layer",
+            "Provides network services to applications. Examples: HTTP, FTP and SMTP."],
+
+        6: ["Presentation Layer",
+            "Handles data formatting, encryption, decryption and compression."],
+
+        5: ["Session Layer",
+            "Establishes, manages and terminates communication sessions."],
+
+        4: ["Transport Layer",
+            "Ensures data delivery using TCP and UDP protocols."],
+
+        3: ["Network Layer",
+            "Handles IP addressing and routing of data between networks."],
+
+        2: ["Data Link Layer",
+            "Transfers data between directly connected devices using MAC addresses."],
+
+        1: ["Physical Layer",
+            "Transmits raw bits (0s and 1s) through cables and wireless signals."]
+    };
+
+    document.getElementById("layerExplanation").innerHTML =
+        "<h3>" + explanations[layer][0] + "</h3>" +
+        "<p>" + explanations[layer][1] + "</p>";
+}
+</script>
+</body>
+</html>

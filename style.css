@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* Navigation */
+
+.navbar {
+    background: #071a35;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00d4ff;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(135deg, #071a35, #064b78);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #00d4ff;
+    color: #071a35;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Threat Section */
+
+.threats {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.threats h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #064b78;
+    margin-bottom: 15px;
+}
+
+/* Security Section */
+
+.security {
+    background: #e0f5ff;
+    padding: 60px;
+    text-align: center;
+}
+
+/* About Section */
+
+.about {
+    padding: 60px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background: #071a35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+}
+/* Password Checker */
+
+.password-section {
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 70vh;
+}
+
+.password-section h1 {
+    color: #071a35;
+    margin-bottom: 15px;
+}
+
+.password-section > p {
+    margin-bottom: 25px;
+}
+
+.password-box {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.password-box input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.password-box button {
+    background: #064b78;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.password-box button:hover {
+    background: #071a35;
+}
+
+#result {
+    margin-top: 25px;
+}
+
+#suggestions {
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+.privacy-note {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #555;
+}
+/* Cryptography Module */
+
+.crypto-section {
+    text-align: center;
+    padding: 70px 20px;
+    min-height: 70vh;
+}
+
+.crypto-section h1 {
+    color: #071a35;
+    margin-bottom: 15px;
+}
+
+.crypto-box {
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.crypto-box label {
+    display: block;
+    text-align: left;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+.crypto-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.crypto-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.crypto-buttons {
+    margin: 25px 0;
+}
+
+.crypto-buttons button {
+    background: #064b78;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.crypto-buttons button:hover {
+    background: #071a35;
+}
+
+#output {
+    background: #e0f5ff;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+    min-height: 50px;
+}
+/* Network Security Module */
+
+.network-hero {
+    background: linear-gradient(135deg, #071a35, #064b78);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.network-hero h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.network-hero p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.network-section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.network-section h2 {
+    color: #071a35;
+    margin-bottom: 20px;
+}
+
+.network-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.network-card {
+    background: white;
+    padding: 25px;
+    flex: 1 1 220px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.network-card:hover {
+    transform: translateY(-5px);
+}
+
+.network-card h3 {
+    color: #064b78;
+    margin-bottom: 15px;
+}
+
+.network-card p {
+    line-height: 1.7;
+}
+
+/* OSI Model */
+
+.osi-section {
+    background: #eaf5ff;
+}
+
+.osi-layers {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.osi-layers div {
+    padding: 15px;
+    margin: 8px 0;
+    background: #064b78;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.security-section {
+    background: #f4f7fb;
+}
+/* Cybersecurity Quiz */
+
+.quiz-section {
+    padding: 50px 20px;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.quiz-section h1 {
+    color: #071a35;
+    margin-bottom: 15px;
+}
+
+.question {
+    background: white;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.question h3 {
+    color: #064b78;
+    margin-bottom: 18px;
+}
+
+.question label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.question input {
+    margin-right: 10px;
+}
+
+.quiz-button,
+#retryButton {
+    background: #064b78;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.quiz-button:hover,
+#retryButton:hover {
+    background: #071a35;
+}
+
+#quizResult {
+    margin: 25px auto;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+/* Cybersecurity Safety Tips */
+
+.tips-hero {
+    background: linear-gradient(135deg, #071a35, #075985);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.tips-hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tip-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.tip-card:hover {
+    transform: translateY(-8px);
+}
+
+.tip-card h2 {
+    color: #075985;
+    margin-bottom: 20px;
+}
+
+.tip-card p {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .tips-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+/* About Page Styling */
+
+.about-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #071b2b, #087e8b);
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.about-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.about-card h2 {
+    color: #087e8b;
+    margin-bottom: 15px;
+}
+
+.about-card p,
+.about-card li {
+    line-height: 1.8;
+}
+
+.developer-card {
+    border-left: 5px solid #087e8b;
+}
+.osi-layers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.osi-layers button {
+    width: 320px;
+    padding: 12px;
+    background: #087da5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.osi-layers button:hover {
+    background: #064e75;
+}
+
+.layer-explanation {
+    max-width: 500px;
+    margin: 25px auto;
+    padding: 20px;
+    background: #e5f5fc;
+    border-radius: 10px;
+    text-align: center;
+}

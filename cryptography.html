@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cryptography | CyberSafe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">CyberSafe</h2>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="threats.html">Cyber Threats</a></li>
+                <li><a href="password.html">Password Checker</a></li>
+                <li><a href="cryptography.html">Cryptography</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="crypto-section">
+
+        <h1>Caesar Cipher Encryption 🔐</h1>
+
+        <p>Encrypt and decrypt your messages using Caesar Cipher.</p>
+
+        <div class="crypto-box">
+
+            <label>Enter Your Message</label>
+
+            <textarea id="message" placeholder="Enter your message here"></textarea>
+
+            <label>Enter Shift Key</label>
+
+            <input type="number" id="shift" value="3" min="0" max="25">
+
+            <div class="crypto-buttons">
+
+                <button onclick="encryptMessage()">Encrypt</button>
+
+                <button onclick="decryptMessage()">Decrypt</button>
+
+            </div>
+
+            <h3>Result:</h3>
+
+            <div id="output">Your result will appear here.</div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 CyberSafe | Stay Safe Online</p>
+    </footer>
+
+    <script src="crypto.js"></script>
+
+</body>
+</html>
